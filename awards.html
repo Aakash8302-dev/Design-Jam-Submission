@@ -1,0 +1,103 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Robert Downey | Awards</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <nav class="nav">
+        <input type="checkbox" id="active">
+      <label for="active" class="menu-btn"><i class="fas fa-bars"></i></label>
+      <div class="wrapper">
+         <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./movie.html">Movie List</a></li>
+            <li><a href="./awards.html">Awards</a></li>
+            <li><a href="https://www.instagram.com/robertdowneyjr/" target="_blank">Instagram <i class="fab fa-instagram"></i></a></li>
+         </ul>
+      </div>
+    </nav>
+
+    <div id="wrapper">
+        <div id="c" class="panels">
+            <h1>Awards</h1>
+        </div>
+
+            <div id="a" class="awards-section panels">
+                <div class="awards-video">
+                    <!-- <img src="./images/fade.png" alt="awrd" /> -->
+                    <video autoplay muted loop> 
+                        <source class="text" src="./images/video/videoplayback_Trim.mp4" type="video/mp4" />
+                    </video>
+                </div>
+            </div>
+
+
+        <div id="pinMaster">
+
+            <div id="b" class="panels">
+                <div class="awards-details">
+                    <h1><span id="create">We are Photographer and Director based between London and New York working across multi platform projects within the fashion, beauty, celebrity and advertising industries.</span></h1>
+                </div>
+            </div>
+
+            <div id="d" class=" panels awards-main row">
+                <h3>Awards</h3>
+                <div class="awards-titles">
+                    <h3><span>1992</span>  |  Chaplin  Best actor in Leading role</h3>
+                    <h3><span>1994 </span>|  Short Cuts  Ensemble</h3>
+                    <h3><span>2010</span> |  Sherlock holmes  Best Actor</h3>
+                    <h3><span>2014</span> | Iron Man 3 Fav. Male</h3>
+                    <h3><span>2013</span> | Avengers  Best Fight</h3>
+                    <h3><span>1992</span> | Chaplin  best actor in Leading role</h3>
+                </div>
+            </div>
+
+            <div id="e" class="panels">
+                <div class="banner">
+                    <img src="./images/rdj-award.jpg" alt="rdj" />
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js" integrity="sha512-0xrMWUXzEAc+VY7k48pWd5YT6ig03p4KARKxs4Bqxb9atrcn2fV41fWs+YXTKb8lD2sbPAmZMjKENiyzM/Gagw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js" integrity="sha512-DkPsH9LzNzZaZjCszwKrooKwgjArJDiEjA5tTgr3YX4E6TYv93ICS8T41yFHJnnSmGpnf0Mvb5NhScYbwvhn2w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.0.0/gsap.min.js" integrity="sha512-gNmE7RbgFn8AIEtbCw00Ub5JYgsSRyQ1rvim/sVuzJcDCrhUwAjWCOlEgi9yr7xJBAgesPoUq6xzhci0pn7+qw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"></script>
+
+  <script>
+      let t1 = gsap.timeline();
+      let t2 = gsap.timeline(
+          {scrollTrigger: {trigger: "#e"}},
+          {defaults: {ease: "SlowMo.easeOut"}}
+          );
+
+      let t3 = gsap.timeline(
+        {scrollTrigger: {trigger: "#b"}},
+          {defaults: {ease: "SlowMo.easeOut"}}
+      );
+
+      t1.from("#c", 0.8,  {height: "100%", delay: 0.3, ease: "elastic.in(1,0.75)"});
+      
+      t2.from(".banner img", 1.5, {width:0 });
+
+      t3.to("#create", {y: '0%', duration: 1, stagger: 0.4});
+
+  </script>
+
+</body>
+</html>
