@@ -94,9 +94,6 @@ body{
 
 /* ABOUT */
 
-.about-section{
-
-}
 
 .about{
     padding: 5% 10%;
@@ -376,6 +373,11 @@ body{
     height: 100vh;
 }
 
+#z{
+    background: white;
+    height: 30vh;
+}
+
 
 .nav{
     height: 40px;
@@ -515,97 +517,6 @@ body{
 }
 
 
-@media screen and ( min-width : 350px ) {
-    .hero h1{
-        font-size: 55px;
-        top: 88%;
-    }
-
-    .about-headline h1{
-        font-size: 50px;
-        line-height: 1;
-        font-family: 'Newsreader', serif;
-    }
-
-    .show-section-headline h1{
-        font-size: 2rem;
-    }
-
-    .wrapper ul li a{
-        font-size: 2rem;
-    }
-
-    .wrapper ul li a:hover{
-        font-size: 2.5rem;
-    }
-
-}
-
-@media screen and (min-width: 400px){
-    .hero h1{
-        font-size: 60px;
-    }
-}
-
-@media screen and ( min-width : 520px ) {
-    .hero h1{
-        font-size: 80px;
-        top: 84%;
-    }
-}
-
-@media screen and ( min-width : 700px ) {
-    .hero h1{
-        font-size: 110px;
-        top: 85%;
-    }
-}
-
-@media screen and ( min-width : 1000px ) {
-    .hero h1{
-        font-size: 150px;
-        top: 84%;
-    }
-    .show-section-headline h1{
-        font-size: 3rem;
-    }
-}
-
-@media screen and ( min-width : 1200px ) {
-    .hero h1{
-        font-size: 210px;
-        top: 60%;
-    }
-}
-
-@media screen and ( min-width : 1400px ) {
-    .hero h1{
-        font-size: 210px;
-        top: 57%;
-    }
-    .about-headline h1{
-        font-size: 115px;
-        font-family: 'Newsreader', serif;
-    }
-}
-
-@media screen and ( min-width : 1800px ) {
-    
-    .hero h1{
-        font-size: 250px;
-        top: 58%;
-    }
-    .about-headline h1{
-        font-size: 115px;
-        line-height: 0.8;
-        font-family: 'Newsreader', serif;
-    }
-}
-
-
-
-
-
 .wrapper{
     position: fixed;
     top: 0;
@@ -694,3 +605,106 @@ body{
     font-size: 35px;
     font-weight: 600;
   }
+
+
+  .footer{
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      padding: 5%;
+  }
+
+
+@media screen and ( min-width : 350px ) {
+    .hero h1{
+        font-size: 55px;
+        top: 88%;
+    }
+
+    .about-headline h1{
+        font-size: 50px;
+        line-height: 1;
+        font-family: 'Newsreader', serif;
+    }
+
+    .show-section-headline h1{
+        font-size: 2rem;
+    }
+
+    .wrapper ul li a{
+        font-size: 2rem;
+    }
+
+    .wrapper ul li a:hover{
+        font-size: 2.5rem;
+    }
+
+}
+
+
+
+@media screen and (min-width: 400px){
+    .hero h1{
+        font-size: 60px;
+    }
+}
+
+@media screen and ( min-width : 520px ) {
+    .hero h1{
+        font-size: 80px;
+        top: 84%;
+    }
+}
+
+@media screen and ( min-width : 700px ) {
+    .hero h1{
+        font-size: 110px;
+        top: 85%;
+    }
+}
+
+@media screen and ( min-width : 1000px ) {
+    .hero h1{
+        font-size: 150px;
+        top: 84%;
+    }
+    .show-section-headline h1{
+        font-size: 3rem;
+    }
+}
+
+@media screen and ( min-width : 1200px ) {
+    .hero h1{
+        font-size: 210px;
+        top: 60%;
+    }
+}
+
+@media screen and ( min-width : 1400px ) {
+    .hero h1{
+        font-size: 210px;
+        top: 57%;
+    }
+    .about-headline h1{
+        font-size: 115px;
+        font-family: 'Newsreader', serif;
+    }
+}
+
+@media screen and ( min-width : 1800px ) {
+    
+    .hero h1{
+        font-size: 250px;
+        top: 58%;
+    }
+    .about-headline h1{
+        font-size: 115px;
+        font-family: 'Newsreader', serif;
+    }
+}
+
+
+
+
+
+
